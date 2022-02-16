@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">HelloF17</string>
+    <string name="user_hint_FullName">Enter your Full Name</string>
+    <string name="btnText">OK</string>
+</resources>

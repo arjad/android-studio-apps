@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!-- always to keep it in the ActionBar at all times -->
+    <item
+        android:id="@+id/add"
+        android:icon="@android:drawable/ic_menu_add"
+        app:showAsAction="withText"
+        android:title="adding"/>
+
+    <item
+        android:id="@+id/ok"
+        android:icon="@android:drawable/ic_menu_revert"
+        app:showAsAction="withText"
+        android:title="arjad"/>
+
+    <!-- ifRoom to keep it only if space is available
+
+     |withText : we can append this to either always or ifRoom,
+     to indicate that the toolbar button to be both the icon and the title, not just the icon-->
+    <item
+        android:id="@+id/reset"
+        android:icon="@android:drawable/ic_menu_revert"
+        app:showAsAction="always|withText"
+        android:title="resetting"/>
+
+    <!-- never this means that the menu item will not be placed in the ActionBar as an icon.
+     It will only be visible when the menu button is clicked, in the menu that’s popping up -->
+    <item
+        android:id="@+id/about"
+        android:icon="@android:drawable/ic_dialog_info"
+        app:showAsAction="never"
+        android:title="about">
+    </item>
+
+    <item
+        android:id="@+id/exit" app:showAsAction="never" android:title="exit">
+    </item>
+</menu>
+
